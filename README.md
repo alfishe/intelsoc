@@ -15,7 +15,11 @@ docker run -v $(pwd):/work -it alfishe/intelsoc make
 ## Info
 -v $(pwd):/work means that current folder will be injected into Docker container as /work folder (and Docker image file already set up to operate with /work folder after start)
 
-make - command executed already in container. Can be anything.
+
+alfishe/intelsoc - container image name on Docker Hub (or locally if you already have one with same name)
+
+
+make - command executed already in container. Can be anything
 You can start bash script from current folder inside container. That will be a command:
 docker run -v $(pwd):/work -it alfishe/intelsoc bash -c <your_script>.sh
 
